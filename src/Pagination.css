@@ -1,0 +1,55 @@
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Pagination item */
+  .pagination li {
+    list-style-type: none;
+    margin-right: 6px;
+  }
+  
+  /* Anchor tag styles */
+  .pagination li a {
+    display: inline-block;
+    padding: 2px 12px;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default text color */
+  }
+  
+  /* Active pagination item */
+  .pagination li.active a {
+    background-color: #075985;
+    color: #fff;
+    border: 1px solid #075985;
+  }
+  
+  /* Previous and Next buttons */
+  .pagination li.previous a,
+  .pagination li.next a {
+    background-color: #075985;
+    color: #fff;
+    border: 1px solid #075985;
+  }
+  
+  /* Disabled pagination item */
+  .pagination li.disabled a {
+    pointer-events: none;
+    color: #ccc;
+  }
+  
+  /* Hover effect for pagination items */
+  .pagination li:not(.active):not(.disabled) a:hover {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #333;
+  }
+  
